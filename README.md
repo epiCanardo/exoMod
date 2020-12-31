@@ -8,11 +8,12 @@ Roadmap (for now) :
  => better cleaning jobs : cleaners will perform the job smarter (high prioirity zones, whole room cleaning) 
  
  => social interactions big improvements :  
-    * each pawn will have its own emotional structure, based on the OCEAN personality model and a new set of emotions
+ 
+    - each pawn will have its own emotional structure, based on the OCEAN personality model and a new set of emotions
     
-    * a pawn will can force another to do somethings.. which could be refused
+    - a pawn will can force another to do somethings.. which could be refused
     
-    * many over cool stuff
+    - many over cool stuff
 
 === HOW TO USE THE MOD ===
 1. you need Rimworld !
