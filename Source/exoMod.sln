@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exoMod", "exoMod.csproj", "{00CA084D-C68C-4462-97B0-8EC959B2CE0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00CA084D-C68C-4462-97B0-8EC959B2CE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CA084D-C68C-4462-97B0-8EC959B2CE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CA084D-C68C-4462-97B0-8EC959B2CE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CA084D-C68C-4462-97B0-8EC959B2CE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EBCEF17-66B3-4D9D-97DA-CF89A3D09F18}
+	EndGlobalSection
+EndGlobal

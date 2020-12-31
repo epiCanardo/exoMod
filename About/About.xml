@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>exoMod</name>
+	<author>exocode</author>
+	<supportedVersions>
+		<li>1.2.0</li>
+	</supportedVersions>
+	<description>V1.0 - Parce que poser du carelage au lieu de construire des murs, ça suffit !</description>
+</ModMetaData>
