@@ -3,6 +3,8 @@ A mod for Rimworld PC game.
 
 Roadmap (for now) :
 
+ => new jobs categorization (less categories, more efficiency)
+
  => better wall constructions so that no pawn will be stupidly blocked in the room he just finsished
  
  => better cleaning jobs : cleaners will perform the job smarter (high prioirity zones, whole room cleaning) 
