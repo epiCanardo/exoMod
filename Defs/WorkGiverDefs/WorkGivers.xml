@@ -1,60 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- ============= Firefighter ============= -->
+  <!-- ============= Emergency ============= -->
   
-  <WorkGiverDef>
-    <defName>FightFires</defName>
-    <label>fight fires</label>
-    <giverClass>WorkGiver_FightFires</giverClass>
-    <workType>Firefighter</workType>
-    <emergency>true</emergency>
-    <verb>extinguish</verb>
-    <gerund>extinguishing</gerund>
-    <canBeDoneWhileDrafted>true</canBeDoneWhileDrafted>
-    <autoTakeablePriorityDrafted>20</autoTakeablePriorityDrafted>
-    <forceMote>Mote_FeedbackExtinguish</forceMote>
+  <WorkGiverDef ParentName="DoctorTendToSelf">
+    <defName>DoctorTendToSelfEmergency</defName>
+    <giverClass>WorkGiver_TendSelfEmergency</giverClass>
+    <priorityInType>110</priorityInType>
+    <emergency>True</emergency>
   </WorkGiverDef>
-
-  <!-- ============= Patient ============= -->
-
-  <WorkGiverDef>
+  
+    <WorkGiverDef>
+    <defName>DoctorRescue</defName>
+    <label>rescue downed allies to bed</label>
+    <giverClass>WorkGiver_RescueDowned</giverClass>
+    <workType>Emergency</workType>
+    <verb>rescue</verb>
+    <gerund>rescuing</gerund>
+    <priorityInType>100</priorityInType>
+    <directOrderable>false</directOrderable>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+    
+    <WorkGiverDef>
     <defName>PatientGoToBedEmergencyTreatment</defName>
     <label>go to bed for emergency treatment</label>
     <giverClass>WorkGiver_PatientGoToBedEmergencyTreatment</giverClass>
-    <workType>Patient</workType>
+    <workType>Emergency</workType>
     <emergency>true</emergency>
     <verb>receive treatment in</verb>
     <gerund>receiving treatment in</gerund>
+    <priorityInType>90</priorityInType>
     <tagToGive>RestingForMedicalReasons</tagToGive>
   </WorkGiverDef>
   
-  <WorkGiverDef>
-    <defName>PatientGoToBedTreatment</defName>
-    <label>go to bed for treatment</label>
-    <giverClass>WorkGiver_PatientGoToBedTreatment</giverClass>
-    <workType>Patient</workType>
-    <verb>receive treatment in</verb>
-    <gerund>receiving treatment in</gerund>
-    <tagToGive>RestingForMedicalReasons</tagToGive>
-  </WorkGiverDef>
-  
-  <!-- ============= Doctor ============= -->
-  
-  <WorkGiverDef>
+    <WorkGiverDef>
     <defName>DoctorTendEmergency</defName>
     <label>tend to patients with urgent needs</label>
     <giverClass>WorkGiver_TendOtherUrgent</giverClass>
-    <workType>Doctor</workType>
+    <workType>Emergency</workType>
     <emergency>true</emergency>
     <verb>tend to</verb>
     <gerund>tending to</gerund>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
-    <priorityInType>110</priorityInType>
     <prioritizeSustains>true</prioritizeSustains>
+    <priorityInType>80</priorityInType>
   </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>FightFires</defName>
+    <label>fight fires</label>
+    <giverClass>WorkGiver_FightFires</giverClass>
+    <workType>Emergency</workType>
+    <emergency>true</emergency>
+    <verb>extinguish</verb>
+    <gerund>extinguishing</gerund>
+    <canBeDoneWhileDrafted>true</canBeDoneWhileDrafted>
+    <autoTakeablePriorityDrafted>20</autoTakeablePriorityDrafted>
+    <priorityInType>70</priorityInType>
+    <forceMote>Mote_FeedbackExtinguish</forceMote>
+  </WorkGiverDef>
+  
+   <WorkGiverDef>
+    <defName>PatientGoToBedTreatment</defName>
+    <label>go to bed for treatment</label>
+    <giverClass>WorkGiver_PatientGoToBedTreatment</giverClass>
+    <workType>Emergency</workType>
+    <verb>receive treatment in</verb>
+    <gerund>receiving treatment in</gerund>
+	<priorityInType>60</priorityInType>
+    <tagToGive>RestingForMedicalReasons</tagToGive>
+  </WorkGiverDef>
+  
+  <!-- ============= Doctor ============= --> 
 
   <WorkGiverDef>
     <defName>DoctorTendToHumanlikes</defName>
@@ -83,12 +105,6 @@
       <li>Manipulation</li>
     </requiredCapacities>
     <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
-
-  <WorkGiverDef ParentName="DoctorTendToSelf">
-    <defName>DoctorTendToSelfEmergency</defName>
-    <giverClass>WorkGiver_TendSelfEmergency</giverClass>
-    <emergency>True</emergency>
   </WorkGiverDef>
   
   <WorkGiverDef>
@@ -122,19 +138,6 @@
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
 
-  <WorkGiverDef>
-    <defName>DoctorRescue</defName>
-    <label>rescue downed allies to bed</label>
-    <giverClass>WorkGiver_RescueDowned</giverClass>
-    <workType>Doctor</workType>
-    <verb>rescue</verb>
-    <gerund>rescuing</gerund>
-    <priorityInType>60</priorityInType>
-    <directOrderable>false</directOrderable>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
 
   <WorkGiverDef>
     <defName>DoctorTendToAnimals</defName>

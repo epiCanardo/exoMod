@@ -2,32 +2,33 @@
 <Defs>
 
   <WorkTypeDef>
-    <defName>Firefighter</defName>
-    <labelShort>Firefight</labelShort>
-    <pawnLabel>Firefighter</pawnLabel>
-    <gerundLabel>firefighting</gerundLabel>
-    <description>Extinguish fires in the colony.</description>
-    <verb>Extinguish</verb>
+    <defName>Emergency</defName>
+    <labelShort>Urgences</labelShort>
+    <pawnLabel>Urgencier</pawnLabel>
+    <gerundLabel>urgencier</gerundLabel>
+    <description>Effectue les tâches urgentes (éteindre un feu, appliquer les permiers soins..)</description>
+    <verb>Pare à une urgence</verb>
     <naturalPriority>1400</naturalPriority>
     <alwaysStartActive>true</alwaysStartActive>
     <requireCapableColonist>true</requireCapableColonist>
     <workTags>
       <li>Firefighting</li>
+	  <li>ManualSkilled</li>
       <li>Commoner</li>
       <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
-  <WorkTypeDef>
-    <defName>Patient</defName>
-    <labelShort>Patient</labelShort>
-    <pawnLabel>Patient</pawnLabel>
-    <gerundLabel>patienting</gerundLabel>
-    <description>Go to a medical bed for treatment if you have an immediately life-threatening health condition.</description>
-    <verb>Become patient</verb>
-    <naturalPriority>1350</naturalPriority>
-    <alwaysStartActive>true</alwaysStartActive>
-  </WorkTypeDef>
+  <!-- <WorkTypeDef> -->
+    <!-- <defName>Patient</defName> -->
+    <!-- <labelShort>Patient</labelShort> -->
+    <!-- <pawnLabel>Patient</pawnLabel> -->
+    <!-- <gerundLabel>patienting</gerundLabel> -->
+    <!-- <description>Go to a medical bed for treatment if you have an immediately life-threatening health condition.</description> -->
+    <!-- <verb>Become patient</verb> -->
+    <!-- <naturalPriority>1350</naturalPriority> -->
+    <!-- <alwaysStartActive>true</alwaysStartActive> -->
+  <!-- </WorkTypeDef> -->
 
   <WorkTypeDef>
     <defName>Doctor</defName>
